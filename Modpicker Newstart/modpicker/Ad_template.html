@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide, {font-family: "Montserrat", sans-serif;}
+.w3-right a {  position: absolute; right: 0px;
+  width: 1105px;
+  font-family: "Montserrat", sans-serif;}
+.w3-right a:hover {font-weight: bold; transition: 0.2s; }
+
+
+.searchBar{padding-left: 800px}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+
+}
+
+
+.offerButton {
+  transition: 0.2s;
+  color: black;
+}
+
+.offerButton:hover {
+  transition: 0.2s;
+  color: white;
+  background-color: black;
+}
+
+.offerButton:click {
+  transition: 0.2s;
+  color: black;
+  background-color: black;
+}
+
+
+.price {
+  padding-left: 900px;
+}
+
+.priceBox {
+
+  border: 5px black solid;
+}
+
+.product {
+  padding-right: 500px;
+  padding-bottom: 500px;
+}
+
+.advertisement {
+  padding-left: 60%;
+}
+
+.joe {
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.contact {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+</style>
+<body class="w3-content" style="max-width:1800px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>ModPicker</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+
+    <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+       Body <i class="fa fa-caret-down1"></i>
+       </a>
+       <div id="Engine" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+         <a href="#" class="w3-bar-item w3-button">Aero Parts</a>
+         <a href="#" class="w3-bar-item w3-button">Interior</a>
+         <a href="#" class="w3-bar-item w3-button">Exterior</a>
+       </div>
+       <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="computerdropdown">
+       Brakes<i class="fa fa-caret-down"></i>
+       </a>
+       <div id="Computer" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+         <a href="#" class="w3-bar-item w3-button">Full brake kits</a>
+         <a href="#" class="w3-bar-item w3-button">Rotors/ Pads/ Lines</a>
+         <a href="#" class="w3-bar-item w3-button">Straight</a>
+        <a href="#" class="w3-bar-item w3-button">All</a>
+       </div>
+       <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+         Driveline <i class="fa fa-caret-down"></i>
+       </a>
+       <div id="Tyres" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+         <a href="#" class="w3-bar-item w3-button">Gearbox</a>
+         <a href="#" class="w3-bar-item w3-button">Clutch</a>
+         <a href="#" class="w3-bar-item w3-button">Differential</a>
+         <a href="#" class="w3-bar-item w3-button">Driveshaft</a>
+       </div>
+       <a onclick="myAccFunc4()" href="javascript:void(1)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+         Electrical <i class="fa fa-caret-down"></i>
+       </a>
+       <div id="Brakes" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+         <a href="#" class="w3-bar-item w3-button">Engine management</a>
+         <a href="#" class="w3-bar-item w3-button">Boost controller</a>
+         <a href="#" class="w3-bar-item w3-button">Gauges</a>
+         <a href="#" class="w3-bar-item w3-button">Batteries</a>
+       </div>
+       <a onclick="myAccFunc5()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+         Engine <i class="fa fa-caret-down"></i>
+       </a>
+       <div id="Saftey" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+         <a href="#" class="w3-bar-item w3-button">Pipes and hoses</a>
+         <a href="#" class="w3-bar-item w3-button">Forced induction</a>
+         <a href="#" class="w3-bar-item w3-button">Engine components</a>
+         <a href="#" class="w3-bar-item w3-button">Exhaust</a>
+         <a href="#" class="w3-bar-item w3-button">Service and rebuilds</a>F
+         <a href="#" class="w3-bar-item w3-button">Cooling</a>
+         <a href="#" class="w3-bar-item w3-button">Oil control</a>
+         <a href="#" class="w3-bar-item w3-button">Fuel system </a>
+         <a href="#" class="w3-bar-item w3-button">Engine accessories</a>
+
+       </div>
+         <a onclick="myAccFunc4()" href="javascript:void(1)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+             Seats <i class="fa fa-caret-down"></i>
+         </a>
+         <div id="Brakes" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+         <a href="#" class="w3-bar-item w3-button">Seat rails</a>
+         <a href="#" class="w3-bar-item w3-button">Racing seat</a>
+                     </div>
+                     <a onclick="myAccFunc4()" href="javascript:void(1)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+                       Suspension <i class="fa fa-caret-down"></i>
+                     </a>
+                     <div id="Brakes" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                       <a href="#" class="w3-bar-item w3-button">Coilover suspension</a>
+                       <a href="#" class="w3-bar-item w3-button">Suspension arms</a>
+                       <a href="#" class="w3-bar-item w3-button">Chassis bracing</a>
+                       <a href="#" class="w3-bar-item w3-button">Sway bar</a>
+                         <a href="#" class="w3-bar-item w3-button">Drift parts</a>
+                     </div>
+
+                     <a onclick="myAccFunc4()" href="javascript:void(1)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+                       Wheels and tyres <i class="fa fa-caret-down"></i>
+                     </a>
+                     <div id="Brakes" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                       <a href="#" class="w3-bar-item w3-button">Rims</a>
+                       <a href="#" class="w3-bar-item w3-button">Tyres</a>
+                       <a href="#" class="w3-bar-item w3-button">Wheels</a>
+                       <a href="#" class="w3-bar-item w3-button">Spacers</a>
+                     </div>
+
+
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+
+    <p class="w3-right">
+
+      <a href="post2.html" class="postButton">Make a Post</a>
+      <p class="w3-right">
+      <div class="searchBar">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+
+    </div>
+  </div>
+
+<div class="joe">
+  <img src="enkie rpf1.jpg" width=720px height=540px class="postedImage" align="left">
+
+
+
+</div>
+
+
+<div class="advertisement">
+  <div class="card">
+    <img src="evo account.jpg" alt="John" style="width:100%">
+    <h1>Jack Fraser</h1>
+    <p class="title">CEO & Founder, Example</p>
+    <div>
+    <input placeholder="$1500" class="priceBox"></input>
+    <button class="offerButton">Offer Price</button>
+  </div>
+  </div>
+
+
+
+</div>
+
+
+<div class="product">
+  <h2 class="titleOfProduct">Enkie RPF1 wheels with brand new tyres 17x8</h2>
+    <h2 class="Price">$1500</h2>
+<p class="titleOfProduct">Rims are practically brand new with no scratches or road rash. Tyres are new and only have 500kms on them. Wanting $1500 for the lot or nearest offer.
+  They are a 17x8 and the tyres are performance 225 width. I am located in newcastle but can deliver for more money. Feel free to contact me on 0431534948</p>
+
+</div>
+
+<script>
+// Accordion
+function myAccFunc1() {
+  var x = document.getElementById("Engine");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function myAccFunc2() {
+  var x = document.getElementById("Computer");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function myAccFunc3() {
+  var x = document.getElementById("Tyres");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function myAccFunc4() {
+  var x = document.getElementById("Brakes");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function myAccFunc5() {
+  var x = document.getElementById("Saftey");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
